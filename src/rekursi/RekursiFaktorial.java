@@ -9,7 +9,10 @@ public class RekursiFaktorial {
             return x * faktorial(x-1);
     }
 
+
     public static void main(String[] args) {
-        System.out.println("4! = "+faktorial(4));
+
+        int result = faktorial(4) / (faktorial(2) * faktorial(4-2));
+        System.out.println(result);
     }
 }
